@@ -1,11 +1,9 @@
-# Elgamal Digital Signature Scheme (Python)
-### Overview
-This project implements the **ElGamal digital signature scheme**, a public-key cryptographic system used for message authentication and integrity.
+# ElGamal Digital Signature Scheme (Python)
 
-It includes both signature generation and verification using modular arithmetic over large integers
-___
+## Overview
+This project implements the ElGamal digital signature scheme for public-key authentication and message integrity using modular arithmetic over large integers.
 
-### Features
+## Features
 - ElGamal signature generation
 - ElGamal signature verification
 - Support for arbitrary-size integers
@@ -13,25 +11,46 @@ ___
 - Modular inverse computation
 - Command-line interface
 
-___
+## Concepts Used
+- Public-key cryptography
+- Digital signatures
+- Modular arithmetic
+- Modular exponentiation
+- Modular inverses
+- Randomized algorithms
 
-### Usage
+## Usage
+
 ### Signature Generation
-`python sign.py p g public_key d x`
-### Example
-`python sign.py 101 2 14 10 5`
-### Output
-`59
-35`
-___
+```bash
+python sign.py p g public_key d x
+```
+
+Example:
+```bash
+python sign.py 101 2 14 10 5
+```
+
+Output:
+```
+59
+35
+```
 
 ### Signature Verification
-`python verify.py p g public_key x r s`
-### Example
-`python verify.py 101 2 14 5 59 35`
-### Output
-`1`
-___
+```bash
+python verify.py p g public_key x r s
+```
 
-### Notes
-This implementation is for education purposes and does not use cryptographically secure randomness
+Example:
+```bash
+python verify.py 101 2 14 5 59 35
+```
+
+Output:
+```
+1
+```
+
+## Notes
+This project is intended for educational purposes to demonstrate the ElGamal signature scheme and modular arithmetic concepts. It uses non-cryptographic randomness as permitted by the assignment.
